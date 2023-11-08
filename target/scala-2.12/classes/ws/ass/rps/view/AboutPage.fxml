@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" stylesheets="@../css/MorningTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="42.0" prefHeight="31.0" prefWidth="452.0" text="- Welcome to Rock Paper Scissors Game - " AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="42.0">
+         <font>
+            <Font name="Bodoni MT" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="218.0" prefHeight="153.0" prefWidth="517.0" text="Disclaimer ! This digital version of the Rock Paper Scissors Game is solely intended for entertainment purposes. The computer's choice is randomly generated, ensuring a fair and unpredictable challenge. So, gather your wits, make your choices, and let the games begin! Enjoy the excitement and fun in this classic hand game brought to life in a digital format." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Segoe Print" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="93.0" prefHeight="136.0" prefWidth="517.0" text="Welcome to the Rock Paper Scissors Game! We are thrilled to offer you two exciting modes to test your strategy and luck: Beginner Level (Rock Paper Scissors) and Intermediate Level (Rock Paper Scissors Lizard Spock). Let's dive into the world of hand signs and challenge yourself to be the ultimate champion!" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Segoe Print" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

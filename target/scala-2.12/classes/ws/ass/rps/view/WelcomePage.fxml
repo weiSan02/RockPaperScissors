@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="430.0" prefWidth="600.0" stylesheets="@../css/MorningTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ws.ass.rps.view.WelcomePageController">
+    <children>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="259.0" prefHeight="100.0" prefWidth="600.0" spacing="120.0">
+         <children>
+              <Button fx:id="beginnerButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#onBeginnerButtonClicked" prefHeight="60.0" prefWidth="150.0" stylesheets="@../css/MorningTheme.css" text="Beginner" />
+            <Button fx:id="intermediateButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#onIntermediateButtonClicked" prefHeight="60.0" prefWidth="150.0" styleClass="start-button" stylesheets="@../css/MorningTheme.css" text="Intermediate" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="7.0" layoutY="141.0" prefHeight="100.0" prefWidth="600.0" spacing="15.0" styleClass="image" stylesheets="@../css/MorningTheme.css">
+         <children>
+            <Label text="- Welcome to Rock Paper Scissors Game -">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Please Choose Level to Begin">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Group layoutX="471.0" layoutY="14.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Pane layoutX="468.0" layoutY="62.0" prefHeight="24.0" prefWidth="117.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="62.0">
+         <children>
+            <Slider fx:id="volumeSlider" layoutX="28.0" layoutY="5.0" prefHeight="14.0" prefWidth="91.0" value="50.0" />
+            <ImageView fitHeight="24.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/sound_image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="451.0" layoutY="14.0" prefHeight="48.0" prefWidth="150.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="morningButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToMorningTheme" prefHeight="48.0" prefWidth="32.0" style="-fx-background-color: rgba(0,0,0,0);">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                     <image>
+                        <Image url="@../image/sun_image.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="nightButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="43.0" mnemonicParsing="false" onAction="#switchToNightTheme" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: rgba(0,0,0,0);">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/moon_image.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="defaultButton" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" mnemonicParsing="false" onAction="#switchToDefaultTheme" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: rgba(0,0,0,0);">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/default.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

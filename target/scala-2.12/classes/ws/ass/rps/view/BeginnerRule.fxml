@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" styleClass="anchor-pane" stylesheets="@../css/MorningTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="171.0" layoutY="14.0" prefHeight="27.0" prefWidth="278.0" text="- Beginner Level Instruction -" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Bodoni MT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="71.0" prefHeight="96.0" prefWidth="567.0" text="This guide will help you understand the rules and gameplay for the Beginner Level (Rock Paper Scissors). Get ready to test your decision-making skills and enjoy the thrill of this classic hand game!" textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </Label>
+      <Group layoutX="290.0" layoutY="194.0" AnchorPane.bottomAnchor="66.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="194.0">
+         <children>
+            <Label layoutY="25.0" prefHeight="46.0" prefWidth="300.0" text="2. Choose one of the three hand signs (Rock, Paper, or Scissors) by clicking on the corresponding button." wrapText="true">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="25.0" prefWidth="300.0" text="1. Click on the &quot;Beginner &quot; button to start.">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="71.0" prefHeight="25.0" prefWidth="300.0" text="3. Wait for computer to generate its choice.">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="96.0" prefHeight="46.0" prefWidth="300.0" text="4. The result of the round will be displayed, showing if you or the computer won." wrapText="true">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutY="142.0" prefHeight="38.0" prefWidth="300.0" text="5. Play multiple rounds until one player reaches three wins." wrapText="true">
+               <font>
+                  <Font name="Bodoni MT" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <ImageView fitHeight="191.0" fitWidth="231.0" layoutX="30.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="70.75862121582031" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="194.0">
+         <image>
+            <Image url="@../image/beginnerLvl_rule.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

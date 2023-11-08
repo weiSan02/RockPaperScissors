@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" stylesheets="@../css/MorningTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ws.ass.rps.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="homeButton" mnemonicParsing="false" onAction="#homePage" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Home Page" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem fx:id="aboutButton" mnemonicParsing="false" onAction="#aboutPage" text="Rock Paper Scissors" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="How to Play">
+               <items>
+                  <MenuItem fx:id="beginnerRuleButton" mnemonicParsing="false" onAction="#beginnerRule" text="Beginner Level" />
+                  <MenuItem fx:id="interRuleButton" mnemonicParsing="false" onAction="#interRule" text="Intermediate Level" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

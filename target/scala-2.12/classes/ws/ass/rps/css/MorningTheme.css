@@ -1,0 +1,47 @@
+.background {
+    -fx-background-image: url("/ws/ass/rps/image/morning_image.png");
+}
+
+.label {
+    -fx-text-fill: #281157;
+}
+
+.text-field {
+    -fx-prompt-text-fill: gray;
+}
+
+.menu-bar .label {
+    -fx-font-family: "Segoe Print";
+}
+.button {
+    -fx-background-radius: 100px; /* Border radius of 100px */
+    -fx-background-color: #aab6f3;
+    -fx-font-family: "Segoe Print", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #000000;
+    -fx-border-radius: 100px;
+}
+
+.button:hover {
+    -fx-background-color: #dfeff6;
+    -fx-text-fill: #281157; /* Text color after hover */
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+}
+
+.button:default {
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe Print", Helvetica, Arial, sans-serif;
+    -fx-background-color: #aab6f3;
+    -fx-border-color: #5d90e3;
+}
+
+.button:default:hover {
+    -fx-text-fill: #281157;
+}
+
+.button {
+    -fx-focus-traversable: false;
+}

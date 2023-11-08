@@ -1,0 +1,62 @@
+.background {
+    -fx-background-image: url("/ws/ass/rps/image/night_image.png");
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d, 20%);
+    -fx-padding: 0;
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d, 50%);
+}
+
+.menu-bar .label {
+    -fx-font-family: "Segoe Print";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: black;
+}
+
+.text-field {
+    -fx-font-family: "Segoe Print";
+}
+
+.button {
+    -fx-background-radius: 100px;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe Print", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #d8d8d8;
+    -fx-border-radius: 100px;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+}
+
+.button:default {
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe Print", Helvetica, Arial, sans-serif;
+    -fx-background-color: #5065b6;
+    -fx-border-color: white;
+}
+
+.button:default:hover {
+    -fx-text-fill: #ffffff;
+}
+
+.button {
+    -fx-focus-traversable: false;
+}
